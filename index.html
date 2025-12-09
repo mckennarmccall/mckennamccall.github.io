@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>McKenna McCall</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html{
+  font-size:90%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.top a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.top a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.top a.active {
+  background-color: #666;
+  color: white;
+}
+
+.left {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.right{   
+  background-color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+a.top-anchor{
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+a.anchor{
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .top{
+    visibility: hidden;
+    height:0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body{
+    padding: 38px 0 0 300px;
+  }
+
+  .top {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    top: 0;
+    position:fixed;
+    left:0;
+    height:38px;
+  }
+
+  .left{
+    position: fixed;
+    top:38px;
+    left:0;
+    height:100%;
+    width:300px;
+  }
+}
+
+</style>
+<body>
+
+<div class="top">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#pubs">Publications</a>
+    <a href="#awards">Honors & Awards</a>
+    <a href="#service">Service</a>
+    <a href="#teaching">Teaching</a>
+</div>
+
+<div class="row">
+    <div class="left">
+      <h1><a class="top-anchor" id="home" style="text-align: center"></a>McKenna McCall</h1>
+      <img src="files/photo.jpg" style="width:230px">
+      <p>Pronouns: She/Her</p>
+      <p>mckenna.mccall@colostate.edu</p>
+      <!--<p><a href="files/cv-mccall.pdf">Current CV</a></p>-->
+      <!--<p><a href="https://cmu.box.com/s/iypx3dfpkxfltqqdyi8pfpl66b7czesi">Job Documents</a></p>-->
+      <!--<p>Password: mccall-25</p>-->
+    </div>
+    <div class="right">
+      <h2><a class="anchor" id="about"></a>About</h2>
+        <p>I am an Assistant Professor in the <a href="https://compsci.colostate.edu">Computer Science Department</a> at Colorado State University.
+          My research is at the intersection of formal methods and usable security. More 
+          specifically, I am interested in finding ways to help users (even ones without technical backgrounds) 
+          write policies and understand the theoretical guarantees these formal systems can provide.
+        <p> Prior to coming to Colorado State, I completed a postdoc at Carnegie Mellon University, supervised by <a href="https://users.ece.cmu.edu/~lbauer/">Lujo Bauer</a> and <a href="https://lorrie.cranor.org">Lorrie Cranor</a>.  
+          I received my PhD in 2023 from the Electrical & Computer Engineering department at Carnegie Mellon 
+          University, advised by <a href="https://www.andrew.cmu.edu/user/liminjia/">Limin Jia</a>.
+          For my undergraduate, I double majored in Computer Science and Mathematics and minored in Gender, 
+          Women, and Sexuality Studies at Kansas State University.
+        <!--<p> You can find a recent video of me talking about my research on YouTube <a href="https://youtu.be/Z7RjmwVwGH4">here</a>.-->
+        <p> If you are doing research with me, I prefer to be called "McKenna". In the classroom, I have no preference between Professor/Doctor McKenna/McCall. I pronounce my own name "muh-ken-nuh muh-call," but pronouncing the "Mc" like in "McDonalds" is also perfectly acceptable.
+      <h2><a class="anchor" id="pubs"></a>Publications</h2>
+        <p style="margin-bottom:0;"> <b>"You do understand that people don't trust technology?": Explaining Trusted Execution Environments to Non-Experts.</b>
+          <p style="margin : 0; padding-top:0;"> &nbsp; <b> McKenna McCall</b><sup>*</sup>, Carolina Carreira<sup>*</sup>, Miguel Flores, and Lorrie Faith Cranor. <i>Under review</i>.
+          [<a href="files/tee-explainability.pdf">Pre-Print</a>]
+        <p style="margin-bottom:0;"> <b>Location-Enhanced Information Flow for Home Automations.</b>
+          <p style="margin : 0; padding-top:0;"> &nbsp; <b> McKenna McCall</b><sup>*</sup>, Ben Weinshel<sup>*</sup>, Kunlin Cai, Ying Li, Eric Zeng, Devika Manohar, Lujo Bauer, Limin Jia, and Yuan Tian. PETS 2026. <i> To appear.</i>
+          [<a href="files/location-enhanced-ifc.pdf">Pre-Print</a>]
+        <p style="margin-bottom:0;"> <b>Tainted Secure Multi-Execution to Restrict Attacker Influence.</b>
+          <p style="margin : 0; padding-top:0;"> &nbsp; <b> McKenna McCall</b>, Abhishek Bichhawat, and Limin Jia. CCS 2023.
+          [<a href="https://dl.acm.org/doi/pdf/10.1145/3576915.3623110">PDF</a>]
+          [<a href="https://kilthub.cmu.edu/articles/report/Restricting_Attacker_Influence_in_Reactive_Programs_with_Dynamic_Secrets/22296628">TR</a>]
+        <p style="margin-bottom:0;"> <b>Towards Usable Security Analysis Tools for Trigger-Action Programming.</b>
+          <p style="margin : 0; padding-top:0;"> &nbsp; <b> McKenna McCall</b>, Eric Zeng, Faysal Hossain Shezan, Mitchell Yang, Lujo Bauer, Abhishek Bichhawat, Camille Cobb, Limin Jia, and Yuan Tian. SOUPS 2023.
+          [<a href="files/mccall-tapusability.pdf">PDF</a>] [<a href="https://kilthub.cmu.edu/articles/dataset/Towards_Usable_Security_Analysis_Tools_for_Trigger-Action_Programming_--_Dataset/23100482">Data</a>]
+        <p style="margin-bottom:0;"> <b>Information Flow Control for Dynamic Reactive Systems.</b>
+          <p style="margin : 0; padding-top:0;"> &nbsp; <b> McKenna McCall</b>. Carnegie Mellon University 2023 
+          (PhD thesis).
+          [<a href="files/reactive-ifc-mccall.pdf">PDF</a>]
+        <p style="margin-bottom:0;"> <b>Compositional Information Flow Monitoring for Reactive Programs.</b>
+        <p style="margin : 0; padding-top:0;"> &nbsp; <b>McKenna McCall</b>, Abhishek Bichhawat, and Limin Jia. Euro S&P 2022.
+          [<a href="files/compositional-ifc.pdf">PDF</a>]
+          [<a href="https://kilthub.cmu.edu/articles/report/Compositional_Information_Flow_Monitoring_for_Reactive_Programs/19214415">TR</a>]
+        <p style="margin-bottom:0;"> <b>Gradual Security Types and Gradual Guarantees.</b>
+        <p style="margin : 0; padding-top:0;"> &nbsp; Abhishek Bichhawat, <b>McKenna McCall</b>, and Limin Jia. CSF 2021.
+          [<a href="files/grad-typing.pdf">PDF</a>]
+          Earlier version [<a href="https://arxiv.org/abs/2003.12819">TR</a>]
+        <p style="margin-bottom:0;"> <b>Knowledge-based Security of Dynamic Secrets for Reactive Programs.</b>
+        <p style="margin : 0; padding-top:0;"> &nbsp; <b>McKenna McCall</b>, Hengruo Zhang, and Limin Jia. CSF 2018.
+          [<a href="files/knowledge-dynamic.pdf">PDF</a>]
+          [<a href="https://kilthub.cmu.edu/articles/report/Knowledge-based_Security_of_Dynamic_Secrets_for_Reactive_Programs_CMU-CyLab-18-001_/16692406?file=30909652">TR</a>]
+        <p style="margin-bottom:0;"> <b>A Sequent Calculus for Counterfactual Reasoning.</b>
+        <p style="margin : 0; padding-top:0;"> &nbsp; <b>McKenna McCall</b>, LayKuan Loh, and Limin Jia. PLAS 2017
+          [<a href="https://dl.acm.org/doi/10.1145/3139337.3139342">PDF</a>]
+          [<a href="https://kilthub.cmu.edu/articles/journal_contribution/A_Sequent_Calculus_for_Counterfactual_Reasoning_CMU-CyLab-17-003_/6467738?file=11896187">TR</a>]
+        <p><sup>*</sup>These authors contributed to this work equally.
+      <h2>Unpublished Reports</h2>
+        <p  style="margin-bottom:0;"> <b>RTBAS: Defending LLM Agents Against Prompt Injection and Privacy Leakage.</b>
+        <p  style="margin : 0; padding-top:0;"> &nbsp; Peter Yong Zhong<sup>*</sup>, Siyuan Chen<sup>*</sup>, Ruiqi Wang, <b> McKenna McCall</b>, Ben L. Titzer, Heather Miller, and Phillip B. Gibbons.
+        [<a href="https://arxiv.org/pdf/2502.08966">PDF</a>]
+        <p  style="margin-bottom:0;"> <b>SafeTAP: An Efficient Incremental Analyzer for Trigger-Action Programs.</b>
+        <p  style="margin : 0; padding-top:0;"> &nbsp; <b> McKenna McCall</b>, Faysal Hossain Shezan, Abhishek Bichhawat, Camille Cobb, Limin Jia, Yuan Tian, Cooper Grace, Mitchell Yang.
+        [<a href="https://kilthub.cmu.edu/articles/report/SafeTAP_An_Efficient_Incremental_Analyzer_for_Trigger-Action_Programs/14792271">TR</a>]
+        <p><sup>*</sup>These authors contributed to this work equally.
+      <h2><a class="anchor" id="awards"></a>Honors & Awards</h2>
+        <p>IEEE Euro S&P 2022 Outstanding Presentation Award for <i>Compositional Information Flow Monitoring for Reactive Programs</i>
+        <p>IEEE S&P (Oakland) 2021 Shadow PC Distinguished Reviewer
+        <!--<p>CyLab Presidential Fellowship, 2020-->
+
+      <h2><a class="anchor" id="service"></a>Service</h2>
+        <h3> Professional Service </h3>
+          <p> &nbsp; <a href="https://na.eventscloud.com/website/89704/">Cyber Resilience Forum</a> Attendee, 2025
+          <p> &nbsp; <a href="https://cdis.wisc.edu/satc2/">NSF SaTC Vision 2.0 Workshop</a> Attendee, 2023
+        <h3> University and Departmental Service </h3>
+          <p> &nbsp; CS Undergraduate Program Committee
+          <!--<p> &nbsp; Ombudsperson for the Research Experience for Undergraduates Program, Summer 2024-2025
+          <p> &nbsp; CyLab Student Seminar committee, Summer 2024-Summer 2025
+          <p> &nbsp; CyLab JEDI committee, Spring 2024-Spring 2025
+          <p> &nbsp; <a href="https://www.cmu.edu/scs/s3d/reuse/">REUSE</a> admissions comittee, 2024
+          <p> &nbsp; Universal Access Committee and Facilities Working Group, Spring 2022-Spring 2023
+          <p> &nbsp; Dining Student Advisory Council, Spring 2022-Spring 2023
+          <p> &nbsp; CyLab Mentor, Fall 2022
+          <p> &nbsp; CIO Advisory Council, Summer 2022-Fall 2022
+          <p> &nbsp; Advisory Committee for the CMU <a href="https://www.cmu.edu/student-success/">Student Academic Sucess Center</a> Executive Director Search, Spring 2022
+          <p> &nbsp; CMU <a href="https://www.cmu.edu/stugov/gsa/index.html">Graduate Student Assembly</a> VP of Campus Affairs, Spring 2022
+          <p> &nbsp; Parking & Transportation Advisory Committee, Spring 2022
+          <p> &nbsp; CMU <a href="https://www.cmu.edu/stugov/gsa/index.html">Graduate Student Assembly</a> Partner and Family Advocate, Spring 2021-Fall 2021 
+          <p> &nbsp; Family Care Advisory Committee, Spring 2021-Summer 2021
+          <p> &nbsp; ECE Diversity Committee, Spring 2021-->
+        <h3> Program Committees </h3>
+          <p> &nbsp; <a href="https://www.usenix.org/conference/usenixsecurity26">USENIX Security</a> Program Committee, 2025-26
+          <p> &nbsp; <a href="https://csf2026.ieee-security.org">CSF</a> Program Committee, 2025-26
+          <p> &nbsp; <a href="https://www.sigsac.org/ccs/CCS2026/">CCS</a> Program Committee, 2026
+          <p> &nbsp; <a href="https://plas25.github.io">PLAS</a> Program Committee, 2025
+          <p> &nbsp; <a href="https://isec.unige.ch/cfp/cpra-2025">CPRA</a> Program Committee, 2025
+          <p> &nbsp; <a href="https://popl24.sigplan.org/home/prisc-2024">PriSC</a> Program Committee, 2023-24
+          <p> &nbsp; <a href="https://squera.github.io/fcs23/">FCS</a> Program Committee, 2023
+          <p> &nbsp; <a href="https://www.sigsac.org/ccs/CCS2022/">CCS</a> Poster Committee, 2022
+          <p> &nbsp; <a href="https://www.ieee-security.org/TC/SP2022/">IEEE S&P</a> (Oakland) Program Committee, 2022
+          <p> &nbsp; <a href="https://www.ieee-security.org/TC/SP2021/index.html">IEEE S&P</a> (Oakland) Shadow PC, 2021
+      <h2><a class="anchor" id="teaching"></a>Teaching</h2>
+        <p> Usable Formal Methods for Security/Privacy (CS 580) <a href="https://courses.cs.colostate.edu/cs580b4/">F25</a>
+        <!--<p> Fall 2023: Guest Lecture on Information Flow Control for Software Foundations of Security and Privacy (15-316)
+        <p> Fall 2021: TA for Introduction to Information Security (18-631/14-741)
+        <p> Fall 2017: TA for Introduction to Information Security (18-631/14-741)-->
+    </div>
+</div>
+
+
+</body>
+</html>
